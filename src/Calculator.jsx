@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export const Calculator = ({title = 'Calculator App'}) => {
+export const Calculator = ({title = 'Calculator'}) => {
   const [operators, setOperators] = useState('')
   const [result, setResult] = useState('')
   const operatorsHandler = (input) => setOperators(previous => previous + input)
@@ -13,7 +13,7 @@ export const Calculator = ({title = 'Calculator App'}) => {
 
   return (
     <>
-      <h1> { title } </h1>
+      <h1> {title} </h1>
       <p> {operators} = {result} </p>
       <div className='calculator'>
         {[1,2,3,4,5,6,7,8,9,0,'+','-','/','*','**(1/','(',')'].map(
